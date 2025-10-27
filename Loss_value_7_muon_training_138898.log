@@ -1,0 +1,58 @@
+/home/e/e1415353/my_projects/miniconda3/envs/ml/lib/python3.10/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+2025-09-23 22:48:12.812 | INFO     | __main__:set_random_seed:221 - Set random seed to 42
+2025-09-23 22:49:02.604 | INFO     | __main__:<module>:352 - Starting training...
+2025-09-23 22:49:02.604 | INFO     | __main__:<module>:353 - Training steps: 1000
+2025-09-23 22:49:02.604 | INFO     | __main__:<module>:354 - Batch size: 2
+2025-09-23 22:49:02.604 | INFO     | __main__:<module>:355 - Gradient accumulation steps: 16
+2025-09-23 22:49:02.604 | INFO     | __main__:<module>:356 - Learning rate: 0.0003
+Qwen3ForCausalLM(
+  (model): Qwen3Model(
+    (embed_tokens): Embedding(151936, 1024)
+    (layers): ModuleList(
+      (0-27): 28 x Qwen3DecoderLayer(
+        (self_attn): Qwen3Attention(
+          (q_proj): Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): Qwen3RMSNorm((128,), eps=1e-06)
+          (k_norm): Qwen3RMSNorm((128,), eps=1e-06)
+        )
+        (mlp): Qwen3MLP(
+          (gate_proj): Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): Linear(in_features=3072, out_features=1024, bias=False)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): Qwen3RMSNorm((1024,), eps=1e-06)
+        (post_attention_layernorm): Qwen3RMSNorm((1024,), eps=1e-06)
+      )
+    )
+    (norm): Qwen3RMSNorm((1024,), eps=1e-06)
+    (rotary_emb): Qwen3RotaryEmbedding()
+  )
+  (lm_head): Linear(in_features=1024, out_features=151936, bias=False)
+)
+2025-09-23 23:31:30.437 | INFO     | __main__:<module>:363 - Training completed!
+{'loss': 11.6976, 'grad_norm': 8.8125, 'learning_rate': 0.000294, 'epoch': 0.05, 'num_input_tokens_seen': 371120, 'train_runtime': 138.926, 'train_tokens_per_second': 2671.349}
+{'loss': 8.8552, 'grad_norm': 4.1875, 'learning_rate': 0.0002980350320160635, 'epoch': 0.1, 'num_input_tokens_seen': 741104, 'train_runtime': 265.4296, 'train_tokens_per_second': 2792.093}
+{'loss': 7.9508, 'grad_norm': 2.171875, 'learning_rate': 0.00029203287444524024, 'epoch': 0.15, 'num_input_tokens_seen': 1106336, 'train_runtime': 390.4073, 'train_tokens_per_second': 2833.799}
+{'loss': 7.8488, 'grad_norm': 3.015625, 'learning_rate': 0.0002821564303116212, 'epoch': 0.2, 'num_input_tokens_seen': 1479216, 'train_runtime': 515.6653, 'train_tokens_per_second': 2868.558}
+{'loss': 7.7462, 'grad_norm': 2.703125, 'learning_rate': 0.00026867510326520326, 'epoch': 0.25, 'num_input_tokens_seen': 1858176, 'train_runtime': 641.0168, 'train_tokens_per_second': 2898.795}
+{'loss': 7.6869, 'grad_norm': 2.390625, 'learning_rate': 0.00025195662876461596, 'epoch': 0.3, 'num_input_tokens_seen': 2231904, 'train_runtime': 765.9296, 'train_tokens_per_second': 2913.981}
+{'loss': 7.6106, 'grad_norm': 2.03125, 'learning_rate': 0.00023245704321242492, 'epoch': 0.35, 'num_input_tokens_seen': 2608800, 'train_runtime': 889.9306, 'train_tokens_per_second': 2931.465}
+{'loss': 7.5419, 'grad_norm': 2.0, 'learning_rate': 0.00021070824447086807, 'epoch': 0.4, 'num_input_tokens_seen': 2981008, 'train_runtime': 1013.9279, 'train_tokens_per_second': 2940.059}
+{'loss': 7.4787, 'grad_norm': 2.421875, 'learning_rate': 0.00018730348307472824, 'epoch': 0.45, 'num_input_tokens_seen': 3351376, 'train_runtime': 1141.7766, 'train_tokens_per_second': 2935.229}
+{'loss': 7.4494, 'grad_norm': 2.03125, 'learning_rate': 0.00016288117990323256, 'epoch': 0.5, 'num_input_tokens_seen': 3727808, 'train_runtime': 1272.1958, 'train_tokens_per_second': 2930.216}
+{'loss': 7.4194, 'grad_norm': 2.5625, 'learning_rate': 0.00013810751172270658, 'epoch': 0.55, 'num_input_tokens_seen': 4098240, 'train_runtime': 1400.7878, 'train_tokens_per_second': 2925.668}
+{'loss': 7.4194, 'grad_norm': 2.375, 'learning_rate': 0.00011365823962098206, 'epoch': 0.6, 'num_input_tokens_seen': 4471872, 'train_runtime': 1529.3905, 'train_tokens_per_second': 2923.957}
+{'loss': 7.3825, 'grad_norm': 2.25, 'learning_rate': 9.020027600649824e-05, 'epoch': 0.65, 'num_input_tokens_seen': 4844160, 'train_runtime': 1657.17, 'train_tokens_per_second': 2923.152}
+{'loss': 7.3397, 'grad_norm': 2.640625, 'learning_rate': 6.837349297631113e-05, 'epoch': 0.7, 'num_input_tokens_seen': 5213376, 'train_runtime': 1783.9857, 'train_tokens_per_second': 2922.319}
+{'loss': 7.3878, 'grad_norm': 2.140625, 'learning_rate': 4.877326827330719e-05, 'epoch': 0.75, 'num_input_tokens_seen': 5584176, 'train_runtime': 1910.3325, 'train_tokens_per_second': 2923.144}
+{'loss': 7.3437, 'grad_norm': 2.140625, 'learning_rate': 3.1934244933412124e-05, 'epoch': 0.8, 'num_input_tokens_seen': 5954896, 'train_runtime': 2037.6091, 'train_tokens_per_second': 2922.492}
+{'loss': 7.3446, 'grad_norm': 2.421875, 'learning_rate': 1.831574761728038e-05, 'epoch': 0.85, 'num_input_tokens_seen': 6329008, 'train_runtime': 2161.8402, 'train_tokens_per_second': 2927.602}
+{'loss': 7.3556, 'grad_norm': 2.25, 'learning_rate': 8.289253430923126e-06, 'epoch': 0.9, 'num_input_tokens_seen': 6695648, 'train_runtime': 2289.1189, 'train_tokens_per_second': 2924.989}
+{'loss': 7.3403, 'grad_norm': 2.125, 'learning_rate': 2.128258998624549e-06, 'epoch': 0.95, 'num_input_tokens_seen': 7069056, 'train_runtime': 2418.9406, 'train_tokens_per_second': 2922.377}
+{'loss': 7.3354, 'grad_norm': 2.109375, 'learning_rate': 8.201879839297986e-10, 'epoch': 1.0, 'num_input_tokens_seen': 7440832, 'train_runtime': 2545.1531, 'train_tokens_per_second': 2923.53}
+{'train_runtime': 2547.6043, 'train_samples_per_second': 12.561, 'train_steps_per_second': 0.393, 'train_loss': 7.776728515625, 'epoch': 1.0, 'num_input_tokens_seen': 7440832}

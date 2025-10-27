@@ -1,0 +1,36 @@
+/home/e/e1415353/my_projects/miniconda3/envs/ml/lib/python3.10/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+2025-09-23 23:40:45.018 | INFO     | __main__:set_random_seed:221 - Set random seed to 42
+2025-09-23 23:41:26.569 | INFO     | __main__:<module>:352 - Starting training...
+2025-09-23 23:41:26.569 | INFO     | __main__:<module>:353 - Training steps: 1000
+2025-09-23 23:41:26.569 | INFO     | __main__:<module>:354 - Batch size: 2
+2025-09-23 23:41:26.569 | INFO     | __main__:<module>:355 - Gradient accumulation steps: 16
+2025-09-23 23:41:26.569 | INFO     | __main__:<module>:356 - Learning rate: 0.0003
+Qwen3ForCausalLM(
+  (model): Qwen3Model(
+    (embed_tokens): Embedding(151936, 1024)
+    (layers): ModuleList(
+      (0-27): 28 x Qwen3DecoderLayer(
+        (self_attn): Qwen3Attention(
+          (q_proj): Linear(in_features=1024, out_features=2048, bias=False)
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=False)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=False)
+          (o_proj): Linear(in_features=2048, out_features=1024, bias=False)
+          (q_norm): Qwen3RMSNorm((128,), eps=1e-06)
+          (k_norm): Qwen3RMSNorm((128,), eps=1e-06)
+        )
+        (mlp): Qwen3MLP(
+          (gate_proj): Linear(in_features=1024, out_features=3072, bias=False)
+          (up_proj): Linear(in_features=1024, out_features=3072, bias=False)
+          (down_proj): Linear(in_features=3072, out_features=1024, bias=False)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): Qwen3RMSNorm((1024,), eps=1e-06)
+        (post_attention_layernorm): Qwen3RMSNorm((1024,), eps=1e-06)
+      )
+    )
+    (norm): Qwen3RMSNorm((1024,), eps=1e-06)
+    (rotary_emb): Qwen3RotaryEmbedding()
+  )
+  (lm_head): Linear(in_features=1024, out_features=151936, bias=False)
+)
